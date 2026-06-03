@@ -1,185 +1,311 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Přehled Proměn | Má vlast cestami proměn</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proměny 2025 – Má vlast cestami proměn</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="promeny.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="container header-container">
-            <div class="logo-area">
-                <h1>MÁ VLAST <span>CESTAMI PROMĚN</span></h1>
-                <h2>MOJA VLASŤ <span>KULTÚRNE PREMENY</span></h2>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">O výstavě</a></li>
-                    <li><a href="promeny.html" class="active">Proměny</a></li>
-                    <li><a href="#">Výstavy</a></li>
-                    <li><a href="#">Osobnosti</a></li>
-                    <li><a href="#">Fotogalerie</a></li>
-                    <li><a href="#">Partnerství</a></li>
-                </ul>
-            </nav>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-logo">
+        <a href="index.html" class="logo-link">
+          <div class="logo-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="var(--teal)" stroke-width="2.5"/>
+              <path d="M12 30 Q18 18 24 22 Q30 26 36 14" stroke="var(--teal)" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <circle cx="24" cy="22" r="3" fill="var(--teal)"/>
+            </svg>
+          </div>
+        </a>
+        <div class="logo-text">
+          <span class="logo-main">MÁ VLAST</span>
+          <span class="logo-sub">CESTAMI PROMĚN</span>
         </div>
-    </header>
-
-    <div class="submenu-bar">
-        <div class="container submenu-flex">
-            <a href="#" class="sub-link active">Proměny 2025</a>
-            <a href="#" class="sub-link">Hlasování</a>
-            <a href="#" class="sub-link">Ročníky</a>
-            <a href="#" class="sub-link">Přihlásit proměnu</a>
+        <div class="logo-text logo-text-right">
+          <span class="logo-main">MOJA VLASŤ</span>
+          <span class="logo-sub">KULTÚRNE PREMENY</span>
         </div>
+      </div>
+      <nav class="navbar-links">
+        <a href="index.html">O výstavbě</a>
+        <a href="promeny.html" class="active">Proměny</a>
+        <a href="#">Výstavy</a>
+        <a href="#">Osobnosti</a>
+        <a href="#">Fotogalerie</a>
+        <a href="#">Partnerství</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">O výstavbě</a>
+      <a href="promeny.html">Proměny</a>
+      <a href="#">Výstavy</a>
+      <a href="#">Osobnosti</a>
+      <a href="#">Fotogalerie</a>
+      <a href="#">Partnerství</a>
+    </div>
+  </header>
 
-    <main class="container content-wrapper">
-        
-        <section class="promeny-section">
-            <h2 class="section-title">Katalog proměn</h2>
-            <div class="promeny-grid">
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1 class="page-hero-title">Proměny <span>2025</span></h1>
+      <p class="page-hero-sub">Místa, která znovu ožila – příběhy obnovy z celé republiky</p>
+    </div>
+  </section>
 
-                <div class="promena-card">
-                    <div class="card-img-placeholder">Bernolákovo</div>
-                    <div class="card-body">
-                        <span class="badge region">Slovensko</span>
-                        <h3 class="location">Bernolákovo</h3>
-                        <h4 class="project-title">Pamiatková obnova a adaptácia starého vodojemu na vyhliadkovú vežu</h4>
-                        <p class="description">Starý vodojem Várdomb v Bernolákove je technickou národnou kultúrnou pamiatkou a bol vybudovaný začiatkom 20. storočia zrejme v roku 1912 na zvyškoch stredovekého hradu Čekliz...</p>
-                        <a href="#" class="read-more">Číst dál</a>
-                    </div>
-                </div>
-
-                <div class="promena-card">
-                    <div class="card-img-placeholder">Černošice</div>
-                    <div class="card-body">
-                        <span class="badge region">Středočeský kraj</span>
-                        <h3 class="location">Černošice</h3>
-                        <h4 class="project-title">Vila Tišnovských – od činžáku k radnici</h4>
-                        <p class="description">Vila Tišnovských z roku 1938 sloužila původně jako činžovní dům s četnickou stanicí. Po válce byla znárodněna a proměněna v obecní byty. V 90. letech v rámci restitucí nejprve získali původní majitelé...</p>
-                        <a href="#" class="read-more">Číst dál</a>
-                    </div>
-                </div>
-
-                <div class="promena-card">
-                    <div class="card-img-placeholder">Hlohovec</div>
-                    <div class="card-body">
-                        <span class="badge region">Slovensko</span>
-                        <h3 class="location">Hlohovec</h3>
-                        <h4 class="project-title">Obnova objektu školskej budovy M. Benku</h4>
-                        <p class="description">Mesto Hlohovec pokračuje v zlepšovaní podmienok pre vzdelávanie a starostlivosť o deti vo svojich materských a základných školách. Projekt obnovy objektu na ulici M. Benku bol realizovaný...</p>
-                        <a href="#" class="read-more">Číst dál</a>
-                    </div>
-                </div>
-
-                <div class="promena-card">
-                    <div class="card-img-placeholder">Liberec</div>
-                    <div class="card-body">
-                        <span class="badge region">Liberecký kraj</span>
-                        <h3 class="location">Liberec</h3>
-                        <h4 class="project-title">DOK Kavárna DOK Nordbeans</h4>
-                        <p class="description">Bývalé drážní skladiště čp. 431 se nachází jihovýchodně od výpravní budovy železniční stanice Liberec z roku 1859. Je postavené původně podle projektu Franze Riesemanna a radikálně přestavěné...</p>
-                        <a href="#" class="read-more">Číst dál</a>
-                    </div>
-                </div>
-
-                <div class="promena-card">
-                    <div class="card-img-placeholder">Litomyšl</div>
-                    <div class="card-body">
-                        <span class="badge region">Pardubický kraj</span>
-                        <h3 class="location">Litomyšl</h3>
-                        <h4 class="project-title">Rekonstrukce Rodného bytu Bedřicha Smetany</h4>
-                        <p class="description">Rodný byt Bedřicha Smetany se nachází v bývalém zámeckém pivovaru v Litomyšli, v areálu památky UNESCO. Slavný hudební skladatel se zde narodil 2. března 1824 u příležitosti 200. výročí jeho narození...</p>
-                        <a href="#" class="read-more">Číst dál</a>
-                    </div>
-                </div>
-
-                <div class="promena-card">
-                    <div class="card-img-placeholder">Luhačovice</div>
-                    <div class="card-body">
-                        <span class="badge region">Zlínský kraj</span>
-                        <h3 class="location">Luhačovice</h3>
-                        <h4 class="project-title">Sluneční lázně</h4>
-                        <p class="description">Památkově chráněný areál Jurkovičova Vadoléčebného ústavu a Říčních a slunečních lázní v Luhačovicích prošel po letech chátrání v období 2021-2024 rozsáhlou obnovou. Rekonstrukce jej zachránila...</p>
-                        <a href="#" class="read-more">Číst dál</a>
-                    </div>
-                </div>
-
-                <div class="promena-card">
-                    <div class="card-img-placeholder">Olomouc</div>
-                    <div class="card-body">
-                        <span class="badge region">Olomoucký kraj</span>
-                        <h3 class="location">Olomouc</h3>
-                        <h4 class="project-title">Jihoslovanské mauzoleum</h4>
-                        <p class="description">Mauzoleum se nachází v Bezručových sadech v Olomouci a bylo postaveno v roce 1926 podle návrhu Huberta Austa. Jsou zde uloženy ostatky vojáků jihoslovanské národnosti z 1. světové války...</p>
-                        <a href="#" class="read-more">Číst dál</a>
-                    </div>
-                </div>
-
-                <div class="promena-card">
-                    <div class="card-img-placeholder">Majetín</div>
-                    <div class="card-body">
-                        <span class="badge region">Olomoucký kraj</span>
-                        <h3 class="location">Majetín</h3>
-                        <h4 class="project-title">Komunitní centrum</h4>
-                        <p class="description">Obec Majetín vybudovala moderní Komunitní centrum, které slouží k setkávání, vzdělávání a kulturním aktivitám. Původní plány musely být z důvodu špatného stavu budovy upraveny...</p>
-                        <a href="#" class="read-more">Číst dál</a>
-                    </div>
-                </div>
-
-                <div class="promena-card">
-                    <div class="card-img-placeholder">Nová Paka</div>
-                    <div class="card-body">
-                        <span class="badge region">Královéhradecký kraj</span>
-                        <h3 class="location">Nová Paka</h3>
-                        <h4 class="project-title">Rekonstrukce Růžencového schodiště</h4>
-                        <p class="description">Kryté barokní Růžencové schodiště ke klášteru, označované též jako Mariánské schodiště, bylo postaveno roku 1735 jako přístupová cesta k paulánskému klášteru. Má padesát schodů...</p>
-                        <a href="#" class="read-more">Číst dál</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="map-section">
-            <h2 class="section-title">Interaktivní mapa proměn</h2>
-            <div class="map-placeholder">
-                <p>🗺️ [Zde by byla načtena interaktivní mapa: Mapa | Satelitní | OpenStreetMap]</p>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="main-footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h3>Kontakt</h3>
-                <p><strong>CESTAMI PROMĚN, z. s.</strong></p>
-                <p>📍 V pevnosti 9, 128 00 Vyšehrad</p>
-                <p>📞 Tel: +420 777 581 983</p>
-                <p>✉️ E-mail: info@cestamipromen.cz</p>
-            </div>
-            <div class="footer-col">
-                <h3>Naše projekty</h3>
-                <ul>
-                    <li><a href="#">Má vlast cestami proměn</a></li>
-                    <li><a href="#">Floriade Expo CZ</a></li>
-                    <li><a href="#">Podvečery s osobnostmi</a></li>
-                    <li><a href="#">Nejkrásnější nádraží</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Další odkazy</h3>
-                <ul>
-                    <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">Ke stažení</a></li>
-                </ul>
-            </div>
+  <!-- ACTION BAR -->
+  <div class="action-bar">
+    <div class="action-bar-inner">
+      <a href="#" class="pill-btn pill-dark">Hlasování</a>
+      <div class="dropdown-wrap">
+        <button class="pill-btn pill-dark dropdown-toggle" id="rocnikyBtn">Ročníky ▾</button>
+        <div class="dropdown-menu" id="rocnikyMenu">
+          <a href="#">2025</a>
+          <a href="#">2024</a>
+          <a href="#">2023</a>
+          <a href="#">2022</a>
+          <a href="#">2021</a>
+          <a href="#">Archiv…</a>
         </div>
-    </footer>
+      </div>
+      <a href="#" class="pill-btn pill-teal">Přihlásit proměnu</a>
+    </div>
+  </div>
 
+  <!-- CARDS GRID -->
+  <main class="promeny-page-main">
+
+    <!-- SECTION LABEL -->
+    <div class="grid-label">9 přihlášených proměn</div>
+
+    <div class="promeny-full-grid">
+
+      <!-- 1 Bernálkovo -->
+      <article class="pcard" style="--delay:0s">
+        <div class="pcard-city">Bernálkovo</div>
+        <div class="pcard-img" style="background-image:url('https://images.unsplash.com/photo-1570267933516-c61f2e4bbd51?w=700&q=80')">
+          <div class="pcard-img-overlay"></div>
+        </div>
+        <div class="pcard-body">
+          <h2>Pamiatková obnova a adaptácia starého vodojemu na vyhliadkovú vežu</h2>
+          <p>Starý vodojem – Várdomb v Bernolákove je technickou národnou kultúrnou pamiatkou a bol vybudovaný začiatkom 20. storočia zrejme v roku 1912 na zvyškoch stredovekého hradu Čeklíz, ktorý zanikol koncom stredoveku…</p>
+          <a href="#" class="pcard-link">Číst dál →</a>
+        </div>
+      </article>
+
+      <!-- 2 Černošice -->
+      <article class="pcard" style="--delay:0.05s">
+        <div class="pcard-city">Černošice</div>
+        <div class="pcard-img" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80')">
+          <div class="pcard-img-overlay"></div>
+        </div>
+        <div class="pcard-body">
+          <h2>Vila Tišnovských – od činžáku k radnici</h2>
+          <p>Vila Tišnovských z roku 1930 sloužila původně jako činžovní dům s četnickou stanicí. Po válce byla znárodněna a proměněna v obecní byty. V 90. letech ji v rámci restitucí nejprve získali původní majitelé, poté…</p>
+          <a href="#" class="pcard-link">Číst dál →</a>
+        </div>
+      </article>
+
+      <!-- 3 Hlohovec -->
+      <article class="pcard" style="--delay:0.1s">
+        <div class="pcard-city">Hlohovec</div>
+        <div class="pcard-img" style="background-image:url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=700&q=80')">
+          <div class="pcard-img-overlay"></div>
+        </div>
+        <div class="pcard-body">
+          <h2>Obnova objektu školskej budovy M. Benku</h2>
+          <p>Mesto Hlohovec pokračuje v zlepšovaní podmienok pre vzdelávanie a starostlivosť o deti vo svojich materských a základných školách. Projekt obnovy objektu na ulici M. Benku bol realizovaný s dôrazom na…</p>
+          <a href="#" class="pcard-link">Číst dál →</a>
+        </div>
+      </article>
+
+      <!-- 4 Liberec -->
+      <article class="pcard" style="--delay:0.15s">
+        <div class="pcard-city">Liberec</div>
+        <div class="pcard-img" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=80')">
+          <div class="pcard-img-overlay"></div>
+        </div>
+        <div class="pcard-body">
+          <h2>Kavárna DOK Nordbeans</h2>
+          <p>Bývalé drážní skladiště čp. 431 se nachází jihovýchodně od výpravní budovy železniční stanice Liberec z roku 1859. Je postavené původně podle projektu Franze Riesemanna a radikálně přestavěné v letech 1904–1906 Ludwigem Schmidlem a Josefem Ungerem…</p>
+          <a href="#" class="pcard-link">Číst dál →</a>
+        </div>
+      </article>
+
+      <!-- 5 Litomyšl -->
+      <article class="pcard" style="--delay:0.2s">
+        <div class="pcard-city">Litomyšl</div>
+        <div class="pcard-img" style="background-image:url('https://images.unsplash.com/photo-1599930113854-d6d7fd521f10?w=700&q=80')">
+          <div class="pcard-img-overlay"></div>
+        </div>
+        <div class="pcard-body">
+          <h2>Rekonstrukce Rodného bytu Bedřicha Smetany</h2>
+          <p>Rodný byt Bedřicha Smetany se nachází v bývalém zámeckém pivovaru v Litomyšli, v areálu památky UNESCO. Slavný hudební skladatel se zde narodil 2. března 1824. U příležitosti 200. výročí jeho narození…</p>
+          <a href="#" class="pcard-link">Číst dál →</a>
+        </div>
+      </article>
+
+      <!-- 6 Luhačovice -->
+      <article class="pcard" style="--delay:0.25s">
+        <div class="pcard-city">Luhačovice</div>
+        <div class="pcard-img" style="background-image:url('https://images.unsplash.com/photo-1563293815-51dba7b38e5d?w=700&q=80')">
+          <div class="pcard-img-overlay"></div>
+        </div>
+        <div class="pcard-body">
+          <h2>Sluneční lázně</h2>
+          <p>Památkově chráněný areál Jurkovičova Vodoléčebného ústavu a Říčních a slunečních lázní v Luhačovicích, po obnově nazvaný Sluneční lázně, prošel po letech chátrání v období 2021–2024 rozsáhlou obnovou. Rekonstrukce zachránila…</p>
+          <a href="#" class="pcard-link">Číst dál →</a>
+        </div>
+      </article>
+
+      <!-- 7 Olomouc -->
+      <article class="pcard" style="--delay:0.3s">
+        <div class="pcard-city">Olomouc</div>
+        <div class="pcard-img" style="background-image:url('https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?w=700&q=80')">
+          <div class="pcard-img-overlay"></div>
+        </div>
+        <div class="pcard-body">
+          <h2>Jihoslovanské mauzoleum</h2>
+          <p>Mauzoleum se nachází v Bezručových sadech v Olomouci a bylo postaveno v roce 1926 podle návrhu olomouckého architekta Huberta Austa. Jsou zde uloženy ostatky vojáků jihoslovanské národnosti, kteří bojovali během 1. světové války…</p>
+          <a href="#" class="pcard-link">Číst dál →</a>
+        </div>
+      </article>
+
+      <!-- 8 Majetín -->
+      <article class="pcard" style="--delay:0.35s">
+        <div class="pcard-city">Majetín</div>
+        <div class="pcard-img" style="background-image:url('https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=700&q=80')">
+          <div class="pcard-img-overlay"></div>
+        </div>
+        <div class="pcard-body">
+          <h2>Komunitní centrum</h2>
+          <p>Obec Majetín vybudovala moderní Komunitní centrum, které slouží k setkávání, vzdělávání a kulturním aktivitám. Původní plány počítaly s rekonstrukcí historické budovy č.p. 36, ale kvůli špatnému stavu ji musela nahradit…</p>
+          <a href="#" class="pcard-link">Číst dál →</a>
+        </div>
+      </article>
+
+      <!-- 9 Nová Paka -->
+      <article class="pcard" style="--delay:0.4s">
+        <div class="pcard-city">Nová Paka</div>
+        <div class="pcard-img" style="background-image:url('https://images.unsplash.com/photo-1548625149-720754953fe5?w=700&q=80')">
+          <div class="pcard-img-overlay"></div>
+        </div>
+        <div class="pcard-body">
+          <h2>Rekonstrukce Růžencového schodiště</h2>
+          <p>Kryté barokní Růžencové schodiště ke klášteru, označované též jako Mariánské schodiště, bylo postaveno roku 1735 jako přístupová cesta k paulánskému klášteru. Má padesát schodů a čtyři zastavení…</p>
+          <a href="#" class="pcard-link">Číst dál →</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- INTERACTIVE MAP -->
+  <section class="promeny-map-section">
+    <div class="promeny-map-inner">
+      <h2 class="section-title">Interaktivní mapa proměn</h2>
+      <p class="map-desc">Klikněte na mapu a prozkoumejte místa proměn v celé České republice a na Slovensku.</p>
+      <div class="gmap-wrap">
+        <iframe
+          class="gmap-iframe gmap-large"
+          src="https://maps.google.com/maps?q=Czech+Republic&t=m&z=7&ie=UTF8&iwloc=&output=embed"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Interaktivní mapa proměn">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <div class="footer-contact-item">
+          <span class="footer-icon">📞</span>
+          <span>Tel: +420 777 581 983</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-icon">✉️</span>
+          <span>E-mail: <a href="mailto:info@cestamipromen.cz">info@cestamipromen.cz</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-icon">📍</span>
+          <span>V pevnosti 9, 128 00 Vyšehrad</span>
+        </div>
+      </div>
+      <div class="footer-projects">
+        <p class="footer-heading">Naše projekty</p>
+        <ul>
+          <li><span class="dot dot-teal"></span><a href="index.html">Má vlast cestami proměn</a></li>
+          <li><span class="dot dot-orange"></span><a href="#">Floriade Expo CZ</a></li>
+          <li><span class="dot dot-red"></span><a href="#">Podvečery s osobnostmi</a></li>
+          <li><span class="dot dot-blue"></span><a href="#">Nejkrásnější nádraží</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <p class="footer-heading">Další odkazy:</p>
+        <ul>
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">Ke stažení</a></li>
+        </ul>
+      </div>
+      <div class="footer-logo-wrap">
+        <div class="footer-logo">
+          <div class="logo-icon logo-icon-sm">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="22" stroke="var(--teal)" stroke-width="2.5"/>
+              <path d="M12 30 Q18 18 24 22 Q30 26 36 14" stroke="var(--teal)" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <circle cx="24" cy="22" r="3" fill="var(--teal)"/>
+            </svg>
+          </div>
+          <div>
+            <div class="footer-logo-text">CESTAMI PROMĚN, Z.S.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open');
+    });
+
+    // Ročníky dropdown
+    const rocnikyBtn = document.getElementById('rocnikyBtn');
+    const rocnikyMenu = document.getElementById('rocnikyMenu');
+    rocnikyBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      rocnikyMenu.classList.toggle('open');
+    });
+    document.addEventListener('click', () => rocnikyMenu.classList.remove('open'));
+
+    // Scroll-reveal animation for cards
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.pcard').forEach(card => observer.observe(card));
+  </script>
 </body>
 </html>

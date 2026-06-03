@@ -30,10 +30,10 @@
         </div>
       </div>
       <nav class="navbar-links">
-        <a href="#">O výstavbě</a>
-        <a href="#">Proměny</a>
+        <a href="index.html" class="active">O výstavbě</a>
+        <a href="promeny.html">Proměny</a>
         <a href="#">Výstavy</a>
-        <a href="#" class="active">Osobnosti</a>
+        <a href="#">Osobnosti</a>
         <a href="#">Fotogalerie</a>
         <a href="#">Partnerství</a>
       </nav>
@@ -42,8 +42,8 @@
       </button>
     </div>
     <div class="mobile-menu" id="mobileMenu">
-      <a href="#">O výstavbě</a>
-      <a href="#">Proměny</a>
+      <a href="index.html">O výstavbě</a>
+      <a href="promeny.html">Proměny</a>
       <a href="#">Výstavy</a>
       <a href="#">Osobnosti</a>
       <a href="#">Fotogalerie</a>
@@ -72,34 +72,15 @@
   <!-- MAP -->
   <section class="map-section">
     <div class="map-placeholder">
-      <div class="map-inner">
-        <div class="map-label">Interaktivní mapa</div>
-        <div class="map-dots-container">
-          <!-- Decorative dots representing locations on map of Czech Republic -->
-          <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" class="map-svg">
-            <image href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Czech_Republic_-_Location_Map_%282013%29_-_CZE_-_UNOCHA.svg/600px-Czech_Republic_-_Location_Map_%282013%29_-_CZE_-_UNOCHA.svg.png" x="0" y="0" width="600" height="320" opacity="0.15"/>
-            <!-- Map dots -->
-            <circle cx="120" cy="160" r="10" fill="var(--teal)" opacity="0.8"/>
-            <circle cx="180" cy="120" r="8" fill="var(--teal)" opacity="0.7"/>
-            <circle cx="240" cy="180" r="12" fill="var(--teal)" opacity="0.85"/>
-            <circle cx="310" cy="140" r="9" fill="var(--teal)" opacity="0.75"/>
-            <circle cx="370" cy="160" r="11" fill="var(--teal)" opacity="0.8"/>
-            <circle cx="430" cy="120" r="8" fill="var(--teal)" opacity="0.7"/>
-            <circle cx="490" cy="180" r="10" fill="var(--teal)" opacity="0.75"/>
-            <circle cx="200" cy="220" r="9" fill="var(--teal)" opacity="0.8"/>
-            <circle cx="280" cy="200" r="13" fill="var(--teal-dark)" opacity="0.9"/>
-            <circle cx="350" cy="210" r="8" fill="var(--teal)" opacity="0.7"/>
-            <circle cx="150" cy="90" r="7" fill="var(--teal)" opacity="0.65"/>
-            <circle cx="400" cy="200" r="9" fill="var(--teal)" opacity="0.75"/>
-            <circle cx="460" cy="155" r="11" fill="var(--teal)" opacity="0.8"/>
-            <circle cx="320" cy="100" r="8" fill="var(--teal)" opacity="0.7"/>
-            <circle cx="100" cy="200" r="10" fill="var(--teal)" opacity="0.75"/>
-            <circle cx="520" cy="140" r="9" fill="var(--teal)" opacity="0.7"/>
-            <circle cx="560" cy="190" r="8" fill="var(--teal)" opacity="0.65"/>
-            <circle cx="80" cy="130" r="7" fill="var(--teal)" opacity="0.6"/>
-          </svg>
-        </div>
-      </div>
+      <div class="map-label">Interaktivní mapa</div>
+      <iframe
+        class="gmap-iframe"
+        src="https://maps.google.com/maps?q=Czech+Republic&t=m&z=7&ie=UTF8&iwloc=&output=embed"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Interaktivní mapa Česká republika">
+      </iframe>
     </div>
     <div class="map-banner">
       <p>Slavnostní zahájení 18. ročníku proběhne v Praze 13. 6. 2026.</p>

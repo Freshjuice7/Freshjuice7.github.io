@@ -3,130 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naše proměny - Má vlast</title>
+    <title>Má vlast cestami proměn</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="header-banner">
-        <div class="container header-top">
+    <header class="main-header">
+        <div class="container header-container">
             <div class="logo-area">
-                <!--<div class="logo-placeholder"></div>-->
-                <img src="img\cestamipromen-16.jpg" alt="Logo"></a>
-                <div>
-                    <h2 style="font-size: 18px; margin: 0;">MÁ VLAST</h2>
-                    <p style="font-size: 11px; margin: 0; opacity: 0.9;">CESTAMI PROMĚN</p>
-                </div>
+                <h1>MÁ VLAST <span>CESTAMI PROMĚN</span></h1>
+                <h2>MOJA VLASŤ <span>KULTÚRNE PREMENY</span></h2>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#">O projektu</a></li>
-                <li><a href="#">Proměny</a></li>
-                <li><a href="#">Kam za výstavy</a></li>
-                <li><a href="#">Zapojte se</a></li>
-                <li><a href="#">Ke stažení</a></li>
-                <li><a href="#">Fotogalerie</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">O výstavě</a></li>
+                    <li><a href="promeny.html">Proměny</a></li>
+                    <li><a href="#">Výstavy</a></li>
+                    <li><a href="#">Osobnosti</a></li>
+                    <li><a href="#">Fotogalerie</a></li>
+                    <li><a href="#">Partnerství</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <div class="container">
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <a href="#" class="hero-btn btn-primary">Chci přihlásit proměnu</a>
+            <a href="#" class="hero-btn btn-secondary">Chci uspořádat výstavu</a>
+            <a href="#" class="hero-btn btn-tertiary">Chci hlasovat o nejhezčí proměně</a>
+        </div>
+    </section>
+
+    <main class="container content-wrapper">
         
-        <h1 class="main-title">Naše proměny</h1>
-
-        <div class="action-buttons">
-            <a href="#" class="btn-circle btn-blue">Chci přihlásit proměnu</a>
-            <a href="#" class="btn-circle btn-teal">Chci uspořádat výstavu</a>
-            <a href="#" class="btn-circle btn-green">Chci hlasovat o nejhezčí proměně</a>
-        </div>
-
-        <div class="map-section">
-            <img class="map-placeholder" src="img\mapa_CP.jpg" alt="Mapa proměn">
-        </div>
-
-        <div class="info-box">
-            <strong>Slavnostní zahájení 18. ročníku proběhne v Praze 13. 6. 2026.</strong><br>
-            <strong>Slávnostné otvorenie 4. ročníka výstavy Moja Vlast' 19. 6. 2026 na Budatínskom hrade.</strong>
-        </div>
-
-        <h2 class="section-title">Patroni</h2>
-        <div class="patrons-grid">
-            <div class="patron-card">
-                <img class="patron-img" src="img\pirk.jpg" alt="Prof. MUDr. Jan Pirk">
-                <p class="patron-quote">"Příznivé změny prospívají krajině i lidským srdcím."</p>
-                <p class="patron-name">Prof. MUDr. Jan Pirk, DrSc.<br><span style="font-weight:normal; font-size:12px; color:#777;">patron projektu</span></p>
+        <section class="announcements">
+            <div class="alert-box">
+                <p><strong>Slavnostní zahájení 18. ročníku</strong> proběhne v Praze <strong>13. 6. 2026</strong>.</p>
             </div>
-            <div class="patron-card">
-                <img class="patron-img" src="img\zmolik.jpg" alt="Mgr. Václav Žmolík">
-                <p class="patron-quote" style="visibility: hidden;">"Příznivé změny prospívají krajině i lidským srdcím."</p>
-                <p class="patron-name">Mgr. Václav Žmolík<br><span style="font-weight:normal; font-size:12px; color:#777;">patron projektu</span></p>
+            <div class="alert-box slovak">
+                <p><strong>Slávnostné otvorenie 4. ročníka</strong> výstavy Moja Vlasť <strong>19. 6. 2026</strong> na Budatínskom hrade.</p>
             </div>
-        </div>
+        </section>
 
-        <h2 class="section-title">Články</h2>
-        <div class="articles-grid">
-            <div class="article-card">
-                <img class="article-thumb" src="img\thumb_20260311_vstava_M_vlast_na_Ostrilov_nmst_foto_D_Kolmanov.jpg" alt="Náhled">
-                <div class="article-content">
-                    <h4>Cestami proměn na Ostrčilově náměstí!</h4>
-                    <div class="article-date">23. 3. 2026 20:50</div>
-                    <p class="article-text">Výstava, která již 17 let představuje proměny chátrajících míst v nádherné prostory, dorazila do Prahy 2. Kolekce...</p>
-                    <a href="#" style="font-size:11px; color:#00a8b5; text-decoration:none;">Číst dál...</a>
+        <section class="articles-section">
+            <h2 class="section-title">Články</h2>
+            <div class="articles-grid">
+                
+                <article class="article-card">
+                    <div class="image-placeholder">Pozvánka</div>
+                    <div class="article-content">
+                        <h3>Pozvánka na zahájení 18. ročníku výstavy Má vlast cestami proměn</h3>
+                        <p>V sobotu 13. června 2026 od 13:00 hodin se v Parku Knížecí a Královské akropole Vyšehrad v Praze 2 uskuteční slavnostní zahájení 18. ročníku celostátní výstavy Má vlast cestami proměn.</p>
+                        <a href="#" class="read-more">Číst dál</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="image-placeholder">Ostrčilovo náměstí</div>
+                    <div class="article-content">
+                        <h3>Má vlast cestami proměn na Ostrčilově náměstí</h3>
+                        <p>Výstava, která již 17 let představuje proměny chátrajících míst v živé a inspirativní prostory, dorazila do Prahy 2. Kolekce vítězů 16. ročníku je nyní k vidění zdarma na Ostrčilově náměstí do 27. 3. 2026.</p>
+                        <a href="#" class="read-more">Číst dál</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="image-placeholder">Po Česku</div>
+                    <div class="article-content">
+                        <h3>Po Česku: nový díl o proměnách z výstavy Má vlast cestami proměn</h3>
+                        <p>Oblíbený rozhlasový pořad Po Česku je věnován inspirativním proměnám z putovní výstavy. Moderátor Václav Žmolík si na natáčení tentokrát přizval prezidenta spolku Cestami proměn Pavla Bureše, který posluchače provede zajímavými místy, jež díky péči místních lidí ožila.</p>
+                        <a href="#" class="read-more">Číst dál</a>
+                    </div>
+                </article>
+
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn-more">Další články...</a>
+            </div>
+        </section>
+
+        <section class="patrons-section">
+            <h2 class="section-title">Patroni</h2>
+            <div class="patrons-grid">
+                <div class="patron-card">
+                    <div class="patron-avatar">Prof. MUDr. Jan Pirk</div>
+                    <h4>Prof. MUDr. Jan Pirk, DrSc.</h4>
+                    <p class="patron-role">Patron projektu</p>
+                    <blockquote class="quote">"Příznivé změny prospívají krajině i lidským srdcím."</blockquote>
+                </div>
+                <div class="patron-card">
+                    <div class="patron-avatar">Mgr. Václav Žmolík</div>
+                    <h4>Mgr. Václav Žmolík</h4>
+                    <p class="patron-role">Patron projektu</p>
                 </div>
             </div>
-            <div class="article-card">
-                <img class="article-thumb" src="img\thumb_20260311_vstava_M_vlast_na_Ostrilov_nmst_foto_D_Kolmanov.jpg" alt="Náhled">
-                <div class="article-content">
-                    <h4>Cestami proměn na Ostrčilově náměstí!</h4>
-                    <div class="article-date">23. 3. 2026 20:50</div>
-                    <p class="article-text">Výstava, která již 17 let představuje proměny chátrajících míst v nádherné prostory, dorazila do Prahy 2. Kolekce...</p>
-                    <a href="#" style="font-size:11px; color:#00a8b5; text-decoration:none;">Číst dál...</a>
-                </div>
-            </div>
-            <div class="article-card">
-                <img class="article-thumb" src="img\thumb_20260311_vstava_M_vlast_na_Ostrilov_nmst_foto_D_Kolmanov.jpg" alt="Náhled">
-                <div class="article-content">
-                    <h4>Cestami proměn na Ostrčilově náměstí!</h4>
-                    <div class="article-date">23. 3. 2026 20:50</div>
-                    <p class="article-text">Výstava, která již 17 let představuje proměny chátrajících míst v nádherné prostory, dorazila do Prahy 2. Kolekce...</p>
-                    <a href="#" style="font-size:11px; color:#00a8b5; text-decoration:none;">Číst dál...</a>
-                </div>
-            </div>
-            <div class="article-card">
-                <img class="article-thumb" src="img\thumb_20260311_vstava_M_vlast_na_Ostrilov_nmst_foto_D_Kolmanov.jpg" alt="Náhled">
-                <div class="article-content">
-                    <h4>Cestami proměn na Ostrčilově náměstí!</h4>
-                    <div class="article-date">23. 3. 2026 20:50</div>
-                    <p class="article-text">Výstava, která již 17 let představuje proměny chátrajících míst v nádherné prostory, dorazila do Prahy 2. Kolekce...</p>
-                    <a href="#" style="font-size:11px; color:#00a8b5; text-decoration:none;">Číst dál...</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="more-link">
-            <a href="#">Další články...</a>
-        </div>
+        </section>
 
-    </div>
+    </main>
 
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-left">
-                <!--<div class="logo-placeholder" style="background: #e67e22; width: 40px; height: 40px;"></div>-->
-                <img src="img\logo-cestami_promen-H.png" style="width: 300px; height: 212px; " alt="Logo">
-                <div class="footer-info">
-                    <strong>CESTAMI PROMĚN, z. s.</strong><br>
-                    V pevnosti 9, 128 00 Vyšehrad<br>
-                    tel: 777 561 966<br>
-                    e-mail: info@cestamipromen.cz
-                </div>
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Kontakt</h3>
+                <p><strong>CESTAMI PROMĚN, z. s.</strong></p>
+                <p>📍 V pevnosti 9, 128 00 Vyšehrad</p>
+                <p>📞 Tel: +420 777 581 983</p>
+                <p>✉️ E-mail: info@cestamipromen.cz</p>
             </div>
-            <div class="footer-right">
-                <strong style="color: #777; display:block; margin-bottom:10px;">Naše projekty</strong>
+            <div class="footer-col">
+                <h3>Naše projekty</h3>
                 <ul>
                     <li><a href="#">Má vlast cestami proměn</a></li>
-                    <li><a href="#">Kamenné svědectví</a></li>
-                    <li><a href="#">Srdce vlasti</a></li>
+                    <li><a href="#">Floriade Expo CZ</a></li>
+                    <li><a href="#">Podvečery s osobnostmi</a></li>
+                    <li><a href="#">Nejkrásnější nádraží</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Další odkazy</h3>
+                <ul>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Ke stažení</a></li>
                 </ul>
             </div>
         </div>
